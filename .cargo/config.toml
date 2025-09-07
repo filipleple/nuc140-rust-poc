@@ -1,0 +1,9 @@
+[build]
+target = "thumbv6m-none-eabi"
+
+[target.thumbv6m-none-eabi]
+rustflags = [
+  "-C", "link-arg=-Tlink.x",
+  "-C", "link-arg=-Map=target/thumbv6m-none-eabi/release/nuc140.map",
+]
+
